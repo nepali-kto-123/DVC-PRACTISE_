@@ -3,7 +3,8 @@ import numpy as np
 import os
 
 df = pd.read_csv(r'c:\\Users\\hp\\Downloads\\dataset\\crocodile_dataset.csv')
-df = df.iloc[:150, :5]
+df = df.sample(100)
+df = df.iloc[:50, :5]
 
 data_dir= "data"
 
